@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cinnamon Structure</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+</head>
+<body>
+  <h1>Cinnamon Structure</h1>
+  <div class="title">Start menu<div
+    class="item">StBin.menu menu-background<div
+      class="item">CinnamonGenericContainer:last-child first-child<div
+        class="item">StBoxLayout.popup-menu-content:last-child first-child<div
+          class="item">StBoxLayout:last-child first-child<div
+            class="item">StBoxLayout.menu-applications-outer-box menu-applications-box:last-child first-child<div
+              class="group row">
+                <div class="item">StBoxLayout.menu-favourites-box:first-child<div
+                  class="group gap">
+                    <div class="item">StScrollView.[vfade?] menu-favourites-scrollbox:first-child<div
+                      class="group row">
+                        <div class="item">StBoxLayout:last-child<div
+                          class="item">StBoxLayout.menu-favourites-button:first-child [hover]<div
+                            class="item">StIcon:last-child first-child<div
+                              class="item">ClutterActor</div
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">StScrollBar<div
+                          class="item">StBin:first-child "trough"<div
+                            class="item">StButton:last-child [hover] "vhandle"</div
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">StBoxLayout:last-child<div
+                      class="item">StBoxLayout.menu-favourites-button:first-child [hover]<div
+                        class="item">StIcon:last-child first-child<div
+                          class="item">ClutterActor</div
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">StBoxLayout:last-child<div
+                  class="group">
+                    <div class="item">StBoxLayout.menu-search-box:first-child<div
+                      class="item">StEntry:last-child first-child focus hover "menu-search-entry"<div
+                        class="group row gap">
+                          <div class="item">ClutterText</div
+                          >
+                          <div class="item">StIcon.menu-search-entry-icon:last-child<div
+                            class="item">ClutterActor</div
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">StBoxLayout<div
+                      class="group row">
+                        <div class="item">StScrollView.[vfade?] menu-applications-scrollbox:first-child<div
+                          class="group row">
+                            <div class="item">StBoxLayout.menu-categories-box:last-child<div
+                              class="item">StBoxLayout.menu-category-button[-selected][:first-child]<div
+                                class="group row">
+                                  <div class="item">StIcon:first-child<div
+                                    class="item">ClutterActor</div
+                                    >
+                                  </div>
+                                  <div class="item">StLabel.menu-category-button-label:last-child<div
+                                    class="item">ClutterText</div
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">StScrollBar<div
+                              class="item">StBin:first-child "trough"<div
+                                class="item">StButton:last-child [hover] "vhandle"</div
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">StScrollView.[vfade?] menu-applications-scrollbox:last-child<div
+                          class="item">StBoxLayout.menu-applicataions-inner-box menu-applications-box:last-child<div
+                            class="item">StBoxLayout.menu-application-button[-selected][:first-child]<div
+                              class="group row">
+                                <div class="item">StIcon:first-child<div
+                                  class="item">ClutterActor</div
+                                  >
+                                </div>
+                                <div class="item">StLabel.menu-application-button-label:last-child<div
+                                  class="item">ClutterText</div
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="title">Popup menu<div
+      class="item">CinnamonGenericContainer:last-child first-child<div
+        class="item">StBoxLayout.popup-menu-content:last-child first-child<div
+          class="group">
+            <div class="item">CinnamonGenericContainer.popup-menu-item[:first-child] [last-child] [focus] [hover] [active]<div
+              class="group row gap">
+                <div class="item">StIcon.popup-menu-icon:first-child<div
+                  class="item">ClutterActor</div
+                  >
+                </div>
+                <div class="item">StLabel:last-child<div
+                  class="item">ClutterText</div
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="item">CinnamonGenericContainer.popup-menu-item<div
+              class="item">StDrawingArea.popup-separator-menu-item:last-child first-child</div
+              >
+            </div>
+            <div class="item">CinnamonGenericContainer.popup-menu-item[:focus] [hover] [active]<div
+              class="group row gap">
+                <div class="item">StLabel:first-child<div
+                  class="item">ClutterText</div
+                  >
+                </div>
+                <div class="item">StLabel.popup-inactive-menu-item</div
+                  >
+                <div class="item">StBin:last-child<div
+                  class="item">StBin.toggle-switch toggle-switch-us:last-child first-child</div
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="item">CinnamonGenericContainer.popup-menu-item popup-submenu-menu-item[:open] [focus] [hover] [active]<div
+              class="group row gap">
+                <div class="item">StLabel:first-child<div
+                  class="item">ClutterText</div
+                  >
+                </div>
+                <div class="item">StBin:last-child<div
+                  class="item">StIcon.popup-menu-arrow:last-child first-child<div
+                    class="item">ClutterActor</div
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">StScrollView.popup-sub-menu<div
+              class="item">StBoxLayout:last-child<div
+                class="item">CinnamonGenericContainer.popup-menu-item[:first-child] [last-child] [focus] [hover] [active]<div
+                  class="group row gap">
+                    <div class="item">StLabel:first-child<div
+                      class="item">ClutterText</div
+                      >
+                    </div>
+                    <div class="item">StBin:last-child<div
+                      class="item">StIcon.popup-menu-icon:last-child first-child</div
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

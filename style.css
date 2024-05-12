@@ -1,0 +1,70 @@
+html {
+    background-color: #181818;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+    font-family: Ubuntu, 'Ubuntu', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #1F1F1F;
+    -webkit-text-stroke: 0.03em #2B2B2B;
+    text-shadow: 0 0 5px #000000;
+}
+
+h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #CCCCCC;
+}
+
+
+p, div {
+    color: #CCCCCC;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.title:not(:first-child) {
+    margin-top: 8px;
+}
+
+.title > .item {
+    margin: auto;
+    margin-top: 4px;
+
+}
+
+.item {
+    border: 1px solid #2B2B2B;
+    background-color: #1F1F1F;
+    padding: 4px;
+    width: fit-content;
+    text-align: left;
+    font-weight: normal;
+}
+
+.item > * {
+    margin-top: 4px;
+}
+
+.item:hover {
+    box-shadow: inset 2px 2px #0078D4, inset -2px -2px #0078D4;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.gap {
+    gap: 10px;
+}
+
+.row {
+    flex-direction: row;
+}
